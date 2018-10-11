@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.dteja.model.BlogComment;
+
 @Repository("blogCommentDAO")
 @Transactional
 public class BlogCommentDAOImpl implements BlogCommentDAO {
@@ -16,31 +17,31 @@ public class BlogCommentDAOImpl implements BlogCommentDAO {
 
 	@Override
 	public boolean updateComment(BlogComment blogComment) {
-		 
+
 		return false;
 	}
 
 	@Override
 	public boolean deleteComment(BlogComment blogComment) {
-		 
+
 		return false;
 	}
 
 	@Override
 	public BlogComment getBlogComment(int blogCommentId) {
-		 
+
 		return null;
 	}
 
 	@Override
 	public List<BlogComment> listBlogComments(int blogId) {
-		 
+
 		return null;
 	}
 
 	@Override
 	public boolean addComment(BlogComment blogComment) {
-		 
+
 		return false;
 	}
 }
