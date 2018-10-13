@@ -10,36 +10,36 @@ import org.springframework.transaction.annotation.Transactional;
 import com.dteja.model.BlogComment;
 
 @Repository("blogCommentDAO")
-@Transactional
+//@Transactional
 public class BlogCommentDAOImpl implements BlogCommentDAO {
 	@Autowired
 	SessionFactory sessionFactory;
 
-	@Override
+	@Transactional
 	public boolean updateComment(BlogComment blogComment) {
 
 		return false;
 	}
 
-	@Override
+	@Transactional
 	public boolean deleteComment(BlogComment blogComment) {
 
 		return false;
 	}
 
-	@Override
+	@Transactional
 	public BlogComment getBlogComment(int blogCommentId) {
 
 		return null;
 	}
 
-	@Override
+	@Transactional
 	public List<BlogComment> listBlogComments(int blogId) {
 
 		return null;
 	}
 
-	@Override
+	@Transactional
 	public boolean addComment(BlogComment blogComment) {
 
 		return false;
